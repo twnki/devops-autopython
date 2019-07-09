@@ -7,6 +7,6 @@ RUN apk update \
     && ln -s /usr/bin/nvim /usr/local/bin/vim \
     && rm -rf /root/.cache/pip 
     
-ENV PS1="\\d - \\t - \\[\\e[33m\\]\\u\\[\\e[m\\]\\[\\e[32m\\]@\\[\\e[m\\]\\[\\e[33m\\]\\h\\[\\e[m\\]\\[\\e[32m\\]:\\[\\e[m\\]\\[\\e[33m\\]\\w\\[\\e[m\\] "
+ENV PS1="\\[\\e[33m\\]\\u\\[\\e[m\\]\\[\\e[32m\\]@\\[\\e[m\\]\\[\\e[33m\\]\\h\\[\\e[m\\]\\[\\e[32m\\]:\\[\\e[m\\]\\[\\e[33m\\]\\w\\[\\e[m\\] "
 
 CMD [ "/bin/sh" ]
